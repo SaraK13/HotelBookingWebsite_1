@@ -78,10 +78,10 @@ if (isset($_COOKIE["logincookie"])) {
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 		  	
 		  	<?php if (@$_SESSION['userID'] == '786' or @$_SESSION['userID'] == '793') { ?>
-				<li><a class="dropdown-item" href="#">Manage profile</a></li>
+				<li><a class="dropdown-item" href="./manage_profile.php">Manage profile</a></li>
 			<?php } elseif(@$_SESSION['userID'] == '435') { ?>
-				<li><a class="dropdown-item" href="#">Manage profile</a></li>
-				<li><a class="dropdown-item" href="#">User list</a></li>
+				<li><a class="dropdown-item" href="./manage_profile.php">Manage profile</a></li>
+				<li><a class="dropdown-item" href="./user_list.php">User list</a></li>
             <?php } else { ?>
             
             <?php } ?>
