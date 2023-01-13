@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Hotel ABC</title>
+		<title>Hotel Bola</title>
 		<!-- CSS only -->
 		<?php require('inc/links.php'); ?>
 		<link
