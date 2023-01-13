@@ -8,8 +8,6 @@ session_start();
 //$requestedPage == "about"
 
 
-
-
 if (isset($_COOKIE["logincookie"])) {
     $login_session_duration = $_COOKIE["logincookie"];
 } else {
@@ -82,23 +80,13 @@ if (isset($_COOKIE["logincookie"])) {
 		  	<?php if (@$_SESSION['userID'] == '786' or @$_SESSION['userID'] == '793') { ?>
 				<li><a class="dropdown-item" href="#">Manage profile</a></li>
 			<?php } elseif(@$_SESSION['userID'] == '435') { ?>
+				<li><a class="dropdown-item" href="#">Manage profile</a></li>
 				<li><a class="dropdown-item" href="#">User list</a></li>
             <?php } else { ?>
             
             <?php } ?>
           </ul>
         </li>
-
-		<?php if (@$_SESSION['userID'] == '786' or @$_SESSION['userID'] == '793') { ?>
-			<li class="nav-item dropdown">
-          		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            	Account
-          		</a>
-          		<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<li><a class="dropdown-item" href="#">User list</a></li>
-            <?php } else { ?>
-            
-            <?php } ?>
 
 
       </ul>
