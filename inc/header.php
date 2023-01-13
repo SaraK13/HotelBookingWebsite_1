@@ -1,14 +1,14 @@
 <?php
 session_start();
-require_once "../routing.php";
+
 
 
 // index.php?page=about
 
 //$requestedPage == "about"
-$requestedPage = getRequestedPage();
 
-include_once "../".$requestedPage;
+
+
 
 if (isset($_COOKIE["logincookie"])) {
     $login_session_duration = $_COOKIE["logincookie"];
