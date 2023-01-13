@@ -4,4 +4,4 @@ $host = "localhost";
 $user = "bif1user";
 $password = "password1";
 $database = "bif1webtechdb";
-?>g
+?>
