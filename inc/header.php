@@ -1,13 +1,6 @@
 <?php
 session_start();
 
-
-
-// index.php?page=about
-
-//$requestedPage == "about"
-
-
 if (isset($_COOKIE["logincookie"])) {
     $login_session_duration = $_COOKIE["logincookie"];
 } else {
@@ -15,9 +8,6 @@ if (isset($_COOKIE["logincookie"])) {
 }
 ?>
 
-<!-- 
-	GET-Request
- -->
 
 <nav class="navbar navbar-expand-lg bg-light px-lg-3 py-lg-2 shadow-sm sticky-top">
   <div class="container-fluid">
@@ -143,7 +133,7 @@ if (isset($_COOKIE["logincookie"])) {
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
     	
-    	<form action="./register/regiser.php" method="post">
+    	<form action="regiser.php" method="post">
     		<div class="modal-header">
         	<h5 class="modal-title d-flex align-items-center">
         	<i class="bi bi-person-lines-fill fs-3 me-2"> Registration</i>

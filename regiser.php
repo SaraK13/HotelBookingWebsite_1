@@ -1,8 +1,8 @@
 
 <?php
 //Loading Files
-require_once ('../DB_connection.php');
-require 'DB_connection.php';
+require_once ('db_connection.php');
+require 'db_connection.php';
 $db_obj = new mysql($host, $user, $password, $database);
 
 if($db_obj->connect_error){
