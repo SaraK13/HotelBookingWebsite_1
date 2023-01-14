@@ -184,7 +184,7 @@ if (isset($_COOKIE["logincookie"])) {
     					<input type="password" name="password_conf" class="form-control shadow-none" required>
     				</div>
     				<div class="text-center my-1">
-    					<button type="submit" class="btn text-white shadow-none">Register</button>
+    					<input type="submit" class="btn text-white shadow-none" name="create"></input>
     				</div>
     			</div>
     		</div>	

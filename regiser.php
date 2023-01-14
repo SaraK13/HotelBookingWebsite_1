@@ -1,9 +1,9 @@
 
 <?php
 //Loading Files
-require_once ('db_connection.php');
-require 'db_connection.php';
-$db_obj = new mysql($host, $user, $password, $database);
+/* require_once ('db_conect.php');
+// require 'db_conect.php';
+$db_obj = new mysql_connect($host, $user, $password, $database);
 
 if($db_obj->connect_error){
     echo "Connection Error: " . $db_obj->connect_error;
@@ -12,7 +12,9 @@ if($db_obj->connect_error){
 
 $sql = "INSERT INTO `user`(`Firstname`, `Lastname`, `ID`, `Email`, `Password`, `user name`) VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]')";
 $stmt = $db_obj->prepare($sql);
-$stmt-> bind_param("ssssssii", $username, $password, $userEmail, $firstname, $lastname, $title, $countryNum, $phone);
+$stmt-> bind_param("ssssssii", $username, $password, $userEmail, $firstname, $lastname, $title, $countryNum, $phone); */
+
+require_once ('dbh.php');
 
  require_once "functions.php";
 
@@ -92,5 +94,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $pdo->rollBack();
         }
     }
-}
+
 ?>

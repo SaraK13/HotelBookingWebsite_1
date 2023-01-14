@@ -14,8 +14,8 @@
 
         public function connect(){
             $this->dbServerName = 'localhost';
-            $this->dbUserName = 'root';
-            $this->dbPassword ='root';//For XAMAPP it is empty, For MAMP it is 'root'
+            $this->dbUserName = 'bif1user';
+            $this->dbPassword ='password1';//For XAMAPP it is empty, For MAMP it is 'root'
             $this->dbName = 'bif1webtechdb';
             $this->charSet = 'utf8mb4';
 
@@ -32,4 +32,3 @@
     }
 
     // dbh stands for database handler
-    
